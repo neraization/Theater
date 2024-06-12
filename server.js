@@ -29,7 +29,7 @@ app.use('/book', book);
 
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-var dbHost = 'mongodb://localhost:27017/dbHost';
+var dbHost = 'mongodb://localhost:27017/dbHost'; //version 2
 mongoose.connect(dbHost);
 
 var db = mongoose.connection;
