@@ -8,7 +8,7 @@ var citySchema = mongoose.Schema({
 
 cityName: String
  });
-var City = mongoose.model('City', citySchema, 'city');
+var City = mongoose.model('City', citySchema, 'citi');
 
 
 router.get('/getCity', function (req, res) {
@@ -29,7 +29,7 @@ router.get('/getCity/:id', function (req, res) {
 
 router.post('/addCity', function(req, res){
 
- console.log("added City");
+ console.log("HFTRGHIGFnh");
  var citi = new City({
      cityName : req.body.cities
   });

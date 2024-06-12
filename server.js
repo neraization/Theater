@@ -3,9 +3,15 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
 
+
+var movies = require('./app/movie-crud');
 var city = require('./app/city-crud');
-
+var theatre = require('./app/theatre-crud');
+var showtime = require('./app/showtime-crud');
+var assign = require('./app/assign-crud');
+var book = require('./app/bookings-crud');
 
 // configuration ===========================================
 
@@ -13,7 +19,13 @@ var city = require('./app/city-crud');
 //var db = require('./config/db');
 app.use(bodyParser.json({})); // parse application/json
 
+app.use('/movie', movies);
 app.use('/city', city);
+app.use('/theatre', theatre);
+app.use('/showtime', showtime);
+app.use('/assign', assign);
+app.use('/book', book);
+
 
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
