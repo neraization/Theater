@@ -60,7 +60,7 @@ router.put('/updateBooking/:id', function(req, res){
 })
 
 
-// catch 404 and forward to error handler
+// this part catches 404 and forward to error handler
 router.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
