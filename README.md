@@ -1,2 +1,3 @@
 # Theater
-This is version 2
+# Software Engineering Project: Theater
+# Team Members: Nermin Maslo, Hajrudin Vejzovic, Sadullah-Ado Tahirovic
