@@ -2,6 +2,7 @@ const request = require('supertest');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+import {describe, jest, expect, it} from '@jest/globals'
 
 // Import the router
 const movieRouter = require('../app/movie-crud'); 
